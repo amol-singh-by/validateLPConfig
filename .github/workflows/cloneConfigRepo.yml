@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@main
         with:
           repository: amol-singh-by/cps
-          token: ${{ secrets.my_pat }}
+          token: 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
           path: ./cps
 
     
