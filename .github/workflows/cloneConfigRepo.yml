@@ -29,6 +29,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           path: ./cps
       - run: |
+          git clone https://github.com/amol-singh-by/cps.git
           git config user.name "shreyans-gupta-by"
           git config user.email "shreyans.gupta@blueyonder.com"
           git add .
