@@ -23,18 +23,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
         with:
           repository: amol-singh-by/cps
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.my_pat }}
           path: ./cps
-      - run: |
-          git clone https://github.com/amol-singh-by/cps.git
-          git config user.name "shreyans-gupta-by"
-          git config user.email "shreyans.gupta@blueyonder.com"
-          git add .
-          git commit -m "generated"
-          git push
+
     
     
       
