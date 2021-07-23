@@ -26,5 +26,5 @@ jobs:
       - uses: actions/checkout@main
         with:
           repository: amol-singh-by/cps
-          path: ./config
+          #path: ./config
 
