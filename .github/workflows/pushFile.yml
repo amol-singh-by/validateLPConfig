@@ -1,0 +1,22 @@
+name: Push File
+
+on: push
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: amol-singh-by/validateLPConfig@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'ReadMe.md'
+        destination_repo: 'amol-singh-by/cps'
+        destination_folder: 'test-dir'
+        user_email: 'amol.singh@blueyonder.com'
+        user_name: 'amol-singh-by'
+        commit_message: 'A custom message for the commit'
