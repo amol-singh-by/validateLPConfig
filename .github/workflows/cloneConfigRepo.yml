@@ -30,6 +30,8 @@ jobs:
           #path: ./cps
       - run: |
           git clone https://github.com/amol-singh-by/cps.git
+          git config user.name "shreyans-gupta-by"
+          git config user.email "shreyans.gupta@blueyonder.com"
           git add .
           git diff-index --quiet HEAD || git commit -m "Automatic publish from github.com/project"
           git push target master
