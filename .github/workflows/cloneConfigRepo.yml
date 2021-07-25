@@ -30,7 +30,6 @@ jobs:
           #path: ./cps
       - run: |
           git clone https://github.com/amol-singh-by/cps.git
-          rm everything but the .git directory
           copy source\files target
           cd target
           git add .
