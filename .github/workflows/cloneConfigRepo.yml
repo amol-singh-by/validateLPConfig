@@ -26,8 +26,16 @@ jobs:
       - name: check out another repo
         uses: actions/checkout@v2
         with:
-          repository: amol-singh-by/cps
+          repository: amol-singh-by/validateLPConfig
           #path: ./cps
+      - run: |
+          git clone https://github.com/amol-singh-by/cps.git
+          rm everything but the .git directory
+          copy source\files target
+          cd target
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Automatic publish from github.com/project"
+          git push target master
 
     
     
