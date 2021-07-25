@@ -30,7 +30,6 @@ jobs:
           #path: ./cps
       - run: |
           git clone https://github.com/amol-singh-by/cps.git
-          copy source\files target
           cd target
           git add .
           git diff-index --quiet HEAD || git commit -m "Automatic publish from github.com/project"
