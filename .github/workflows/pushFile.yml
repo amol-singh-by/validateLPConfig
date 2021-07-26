@@ -21,6 +21,6 @@ jobs:
         source_file: 'ReadMe.md'
         destination_repo: 'amol-singh-by/cps'
         destination_folder: 'test-dir'
-        user_email: 'shreyans.gupta@blueyonder.com'
-        user_name: 'shreyans-gupta-by'
+        user_email: 'amol.singh@blueyonder.com'
+        user_name: 'amol-singh-by'
         commit_message: 'A custom message for the commit'
