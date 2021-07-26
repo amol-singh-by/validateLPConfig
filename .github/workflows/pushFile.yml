@@ -14,6 +14,8 @@ jobs:
 
     - name: Pushes test file
       uses: amol-singh-by/validateLPConfig@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
         source_file: 'ReadMe.md'
         destination_repo: 'amol-singh-by/cps'
