@@ -15,13 +15,13 @@ jobs:
         echo "The API_TOKEN_GITHUB is ${{ secrets.API_TOKEN_GITHUB }}"
         
     - name: Pushes test file
-      uses: amol-singh-by/validateLPConfig@main
+      uses: amol-singh-by/cps@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_file: 'ReadMe.md'
-        destination_repo: 'amol-singh-by/cps'
-        destination_folder: 'test-dir'
+        source_file: 'README.md'
+        destination_repo: 'amol-singh-by/validateLPConfig'
+        destination_folder: 'test'
         user_email: 'amol.singh@blueyonder.com'
         user_name: 'amol-singh-by'
         commit_message: 'A custom message for the commit'
