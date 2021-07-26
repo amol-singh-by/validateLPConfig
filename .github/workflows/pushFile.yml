@@ -11,12 +11,13 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-
+    - run: | 
+        echo "The API_TOKEN_GITHUB is ${{ secrets.API_TOKEN_GITHUB }}"
+        
     - name: Pushes test file
       uses: amol-singh-by/validateLPConfig@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        
       with:
         source_file: 'ReadMe.md'
         destination_repo: 'amol-singh-by/cps'
