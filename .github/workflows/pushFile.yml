@@ -15,7 +15,7 @@ jobs:
     - name: Pushes test file
       uses: amol-singh-by/validateLPConfig@main
       with:
-        source_file: 'ReadMe.md'
+        source_file: 'README.md'
         destination_repo: 'amol-singh-by/cps'
         destination_folder: 'test-dir'
         user_email: 'amol.singh@blueyonder.com'
