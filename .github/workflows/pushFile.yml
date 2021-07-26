@@ -21,6 +21,3 @@ jobs:
         user_email: 'shreyans.gupta@blueyonder.com'
         user_name: 'shreyans-gupta-by'
         commit_message: 'A custom message for the commit'
-    - run: |
-          git config user.name "shreyans-gupta-by"
-          git config user.email "shreyans.gupta@blueyonder.com"
