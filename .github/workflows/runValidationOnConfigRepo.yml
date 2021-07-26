@@ -63,7 +63,7 @@ jobs:
           
     - name: run Python Validation
       run: |
-        python validationService.py
+        python validation_standalone.py
     
     - name: Commit report log file
       id: commit
