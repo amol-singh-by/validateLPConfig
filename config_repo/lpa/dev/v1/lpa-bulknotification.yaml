@@ -1,0 +1,129 @@
+# config-repo/lpa/lpa-bulknotification.yaml
+
+bulkNotification:
+  request: 
+  #Controls whether api endpoint accepts HTTP or HTTPS
+    config: "bulkNotificationHTTPSConfiguration"
+    #config: "bulkNotificationHTTPConfiguration"
+    
+  https:
+    host: "0.0.0.0"
+    port: "9930"
+    tls:
+      keyStore:
+        path: "keystore.jks"        
+      trustStore:
+        path: "truststore.jks"
+  http:
+    host: "0.0.0.0"
+    port: "9931"
+    
+  sftp:
+    host: ""
+    port: "22"
+  
+  ftp:
+    host: ""
+    port: "21"
+  
+  azure:
+    connection.string: "azure-connection-string"
+    container.name: "azure-container-name"
+      
+    
+#Bulk message sender and receiver configuration. Uncomment the required type of persistent store
+#***********************************************************************************
+#FIXME: We should address this variable and get rid of space
+
+ing:
+  bulk:
+    persistent:
+      store:
+        #Controls the type of Storage Location
+        #type: "Local File Store"
+        type: "Azure Blob Store"
+        
+        # Path for store type which is selected above.
+        # If Local File Store type is selected. Please configure the HTTP/HTTPs or FILE protocole for callback
+        # If 'Azure Blob Store' type is selected. Please configure the HTTP/HTTPs or AzureBlob protocole for callback
+        path: "/bulkContainer"
+        # Azure connection if 'Azure Blob Store' type is selected.
+        azure:
+          container.name: "mytestcontainer"
+
+# This is an internal API(callback API) which we have exposed need to set those configurations
+# The protocol host and port must be same as Ingestion service listener has
+    callback:
+      #Controls whether api endpoint accepts HTTP or HTTPS, FILE and AzureBlob
+      #protocol: "FILE"
+      protocol: "AzureBlob"
+      #protocol: "HTTP"
+      #protocol: "HTTPS"
+      host: "localhost"
+      port: "9871"
+      path: "ing/api/v1/callback"
+#/ngestions and /messages inbound calls default properties
+    inbound:
+        sender: "ING-A"
+        receivers: "SAP-A"
+        bulkFormat: "CSV"
+        # Comma seperated cannonical models(In UpperCase).Please list all of then here
+        models: "BYDM"
+    bulk:
+        type.version: "BYDM 2021.2.0"
+        
+#Ingestion Service details
+  serviceInstance: "ING-CLUSTER"
+    
+
+#HTTP/HTTPS Request end point for publishing notification for /ingestions end point and publishing canonical message for /messages endpoint
+#Uncomment the required HTTP/HTTPS request configuration for Canonical formed data
+
+canonical:
+  publish:
+    requester:
+      #config: "HTTP_Publish_Canonical_Message"
+      config: "HTTPS_Publish_Canonical_Message"
+      #Path or location of resource
+      path: "/mb"
+      max.connections: "2"
+      connection.idle.timeout: "120000"
+      bufer.size: "1024"
+      http:
+        host: "localhost"
+        port: "9911"
+      https:
+        host: "localhost"
+        port: "8082"
+        tls:
+          keyStore:
+            path: "keystore.jks"
+          trustStore:
+            path: "truststore.jks"
+
+
+#HTTP/HTTPS Request end point for publishing native message for /messages endpoint
+#Uncomment the required HTTP/HTTPS request configuration for Native data
+
+native:
+  publish:
+    requester:
+      #config: "HTTP_Publish_Native_Message"
+      config: "HTTPS_Publish_Native_Message"
+      #Path or location of resource
+      path: "/native"
+      max.connections: "2"
+      connection.idle.timeout: "120000"
+      bufer.size: "1024"
+      http:
+        host: "localhost"
+        port: "8081"
+            
+      https:
+        host: "localhost"
+        port: "8082"
+        tls:
+          keyStore:
+            path: "keystore.jks"
+          trustStore:
+            path: "truststore.jks"

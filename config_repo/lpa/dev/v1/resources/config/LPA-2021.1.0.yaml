@@ -1,0 +1,109 @@
+name: LPA-2021.1.0
+description: lpa adapter
+inbound:
+  requests:
+    - message: 'BYDM:calendar:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:demandForecastUnit:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:demandUnit:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:eventGroup:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:exchangeRate:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+      
+    - message: 'BYDM:forecast2:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:inventoryOnHand2:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:inventoryTransaction2:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:itemHierarchyLevelMember:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:itemLocation:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:item:BYDM 2021.3.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+            
+    - message: 'BYDM:location:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:measurement:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:transferOrder:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:purchaseOrder:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:priceSpecification2:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:promotion:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:receivingAdvice:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:relation:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:sourcing:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:network:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:roundingRule:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:transportEquipment:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:autoApprovalException:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:autoApprovalRule:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:orderGroup:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:supplementalOrder:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:pointOfSaleItem:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:itemShoppingStatus:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+
+    - message: 'BYDM:pricingActivity:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+      
+    - message: 'BYDM:substitution:BYDM 2021.2.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+      
+    - message: 'BYDM:competitor:BYDM 2021.3.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
+    
+    - message: 'BYDM:plannedSupply:BYDM 2021.2.0'
+    
+    - message: 'BYDM:priceRecommendation:BYDM 2021.2.0'
+      
+    - message: 'BYDM:applicationReceiptAcknowledgement:BYDM 2020.3.0'
+
+
+    - message: 'BYDM:locationCluster:BYDM 2021.3.0'
+      flow: 'localModeexp.logic.in-bydm-generic-flow'
