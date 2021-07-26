@@ -13,9 +13,9 @@ logging.basicConfig(filename="./log.txt",
                     datefmt='%Y-%m-%d %H:%M:%S',
                     level=logging.DEBUG)
 
-SERVICE_DEF_PATH = os.path.join(os.path.dirname(__file__), 'src/main/resources/config_repo/lpa/dev/v1/resources/config/LPA-2021.1.0.yaml')
-WORKFLOW_CFG_PATH = os.path.join(os.path.dirname(__file__), 'src/main/resources/config_repo/lpa/dev/v1/resources/config/workflowConfig.json')
-TRANSFORM_CFG_PATH = os.path.join(os.path.dirname(__file__), 'src/main/resources/config_repo/lpa/dev/v1/resources/config/transformConfig.json')
+SERVICE_DEF_PATH = os.path.join(os.path.dirname(__file__), 'config_repo/lpa/dev/v1/resources/config/LPA-2021.1.0.yaml')
+WORKFLOW_CFG_PATH = os.path.join(os.path.dirname(__file__), 'config_repo/lpa/dev/v1/resources/config/workflowConfig.json')
+TRANSFORM_CFG_PATH = os.path.join(os.path.dirname(__file__), 'config_repo/lpa/dev/v1/resources/config/transformConfig.json')
 
 
 def load_servicedefinition_entitylist() -> []:
@@ -120,7 +120,7 @@ def get_schema_workflow():
     :return:
     """
     try:
-        file_path = (r'src/main/resources/config_repo/lpa/dev/v1/resources/config/workflowconfig_schema.json')
+        file_path = (r'config_repo/lpa/dev/v1/resources/config/workflowconfig_schema.json')
 
         # wrkflow_schema_data = open(file_path)
         # print(wrkflow_schema_data)
@@ -136,7 +136,7 @@ def get_schema_transform():
     :return:
     """
     try:
-        file_path = (r'src/main/resources/config_repo/lpa/dev/v1/resources/config/transformconfig_schema.json')
+        file_path = (r'config_repo/lpa/dev/v1/resources/config/transformconfig_schema.json')
 
         # wrkflow_schema_data = open(file_path)
         # print(wrkflow_schema_data)
