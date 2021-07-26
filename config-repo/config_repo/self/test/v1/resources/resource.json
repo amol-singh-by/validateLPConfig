@@ -1,0 +1,6 @@
+{
+    "test": {
+        "entry1": "one",
+        "entry2": "${prop.one}"
+    }
+}
