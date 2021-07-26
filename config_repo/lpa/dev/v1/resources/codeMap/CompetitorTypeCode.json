@@ -1,0 +1,11 @@
+{  
+    "codeMap": {
+        "name": "CompetitorTypeCode", 
+        "isBiDirectional": false,
+        "codes": [ 
+          	{ "key": "OTHER", "value": "OTHER" },
+          	{ "key": "PRIMARY", "value": "PRIMARY" },
+          	{ "key": "SECONDARY", "value": "SECONDARY" }
+       	]
+    }
+}
