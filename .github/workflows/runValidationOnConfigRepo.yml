@@ -47,7 +47,7 @@ jobs:
     
     - name: 'Verify Artifact File validationService.py to be present'
       run: |
-        $file = "./validationService.py"
+        $file = "./validation_standalone.py"
         if(!(Test-Path -path $file))
         {
             Write-Error "Expected file does not exist"
