@@ -12,7 +12,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - run: | 
-        echo "The API_TOKEN_GITHUB is ${{ secrets.API_TOKEN_GITHUB }}"
+        echo "The API_TOKEN_GITHUB is ${{ secrets.my_pat }}"
         
     - name: Pushes test file
       uses: amol-singh-by/validateLPConfig@main
