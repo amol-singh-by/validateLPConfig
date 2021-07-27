@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/sh
+
+set -e
+set -x
 
 echo "Cloning destination git repository"
 
