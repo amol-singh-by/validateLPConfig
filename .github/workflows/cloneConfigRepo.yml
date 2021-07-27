@@ -25,13 +25,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: check out another repo
         uses: actions/checkout@v2
+      - run: | 
+          echo "The API_TOKEN_GITHUB is ${{ secrets.API_TOKEN_GITHUB }}"
         
       - name: Clones Repo
       - uses: amol-singh-by/cps@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       - run: |
-      
           CLONE_DIR=$(mktemp -d)
 
           echo "Cloning destination git repository"
