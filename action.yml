@@ -1,0 +1,8 @@
+name: 'Clone a Repo'
+description: 'Used for pushing a copy of a file to another repository'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'git-commit'
+  color: 'green'
