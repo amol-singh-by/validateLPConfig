@@ -1,16 +1,16 @@
-2021-07-27 01:59:12 INFO-Test for workflowconfig.json schema validation:::
-2021-07-27 01:59:12 ERROR-'false' is not of type 'boolean'
+2021-07-27 02:02:09 INFO-Test for workflowconfig.json schema validation:::
+2021-07-27 02:02:09 ERROR-'false' is not of type 'boolean'
 
 Failed validating 'type' in schema['properties']['workflow']['patternProperties']['^[ A-Za-z0-9_@./#&+-]*$']['properties']['bulkJsonStreamingApplicable']:
     {'type': 'boolean'}
 
 On instance['workflow']['roundingRule']['bulkJsonStreamingApplicable']:
     'false'
-2021-07-27 01:59:12 INFO-(False, 'Given JSON data is invalid')
-2021-07-27 01:59:12 INFO-===================================================================================================================================================
+2021-07-27 02:02:09 INFO-(False, 'Given JSON data is invalid')
+2021-07-27 02:02:09 INFO-===================================================================================================================================================
 
-2021-07-27 01:59:12 INFO-Test for transformconfig.json schema validation:::
-2021-07-27 01:59:12 ERROR-'historical' is a required property
+2021-07-27 02:02:09 INFO-Test for transformconfig.json schema validation:::
+2021-07-27 02:02:09 ERROR-'historical' is a required property
 
 Failed validating 'required' in schema['patternProperties']['^[ A-Za-z0-9_@./#&+-]*$']:
     {'properties': {'daily': {'properties': {'csv': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},
@@ -46,39 +46,39 @@ Failed validating 'required' in schema['patternProperties']['^[ A-Za-z0-9_@./#&+
 
 On instance['ShipQuantityRoundingRules']:
     {'daily': {'csv': {'2021.2.0': {'addOrChangeByRefresh': 'dataweave/bydm_dwl/roundingRule/2021.2.0/RoundingRule-to-ShipQuantityRoundingRules-CSV.dwl'}}}}
-2021-07-27 01:59:12 INFO-(False, 'Given JSON data is invalid')
-2021-07-27 01:59:12 INFO-===================================================================================================================================================
+2021-07-27 02:02:09 INFO-(False, 'Given JSON data is invalid')
+2021-07-27 02:02:09 INFO-===================================================================================================================================================
 
-2021-07-27 01:59:12 INFO-Test for Service Definition and Workflow dependency:::
-2021-07-27 01:59:12 INFO-['demandForecastUnit']
-2021-07-27 01:59:12 INFO-===================================================================================================================================================
+2021-07-27 02:02:09 INFO-Test for Service Definition and Workflow dependency:::
+2021-07-27 02:02:09 INFO-['demandForecastUnit']
+2021-07-27 02:02:09 INFO-===================================================================================================================================================
 
-2021-07-27 01:59:12 INFO-Test for workflow and transformConfig dependency:::
-2021-07-27 01:59:12 INFO-['ProcurementCalendarTimes']
-2021-07-27 01:59:12 INFO-===================================================================================================================================================
+2021-07-27 02:02:09 INFO-Test for workflow and transformConfig dependency:::
+2021-07-27 02:02:09 INFO-['ProcurementCalendarTimes']
+2021-07-27 02:02:09 INFO-===================================================================================================================================================
 
-2021-07-27 01:59:12 INFO-Test for incremental date when NEXT_DAY present in the workflowConfig:::
-2021-07-27 01:59:12 INFO-[{'sequenceNo': 2, 'name': 'StockParameters', 'deleteApplicable': True, 'datePolicy': 'NEXT_DAY'}]
-2021-07-27 01:59:12 INFO-===================================================================================================================================================
+2021-07-27 02:02:09 INFO-Test for incremental date when NEXT_DAY present in the workflowConfig:::
+2021-07-27 02:02:09 INFO-[{'sequenceNo': 2, 'name': 'StockParameters', 'deleteApplicable': True, 'datePolicy': 'NEXT_DAY'}]
+2021-07-27 02:02:09 INFO-===================================================================================================================================================
 
-2021-07-27 01:59:12 INFO-Test for daily and historical present in the transformConfig for every entity:::
-2021-07-27 01:59:12 INFO-["Missing historical in ShipQuantityRoundingRules : {'daily': {'csv': {'2021.2.0': {'addOrChangeByRefresh': 'dataweave/bydm_dwl/roundingRule/2021.2.0/RoundingRule-to-ShipQuantityRoundingRules-CSV.dwl'}}}}"]
-2021-07-27 01:59:12 INFO-===================================================================================================================================================
+2021-07-27 02:02:09 INFO-Test for daily and historical present in the transformConfig for every entity:::
+2021-07-27 02:02:09 INFO-["Missing historical in ShipQuantityRoundingRules : {'daily': {'csv': {'2021.2.0': {'addOrChangeByRefresh': 'dataweave/bydm_dwl/roundingRule/2021.2.0/RoundingRule-to-ShipQuantityRoundingRules-CSV.dwl'}}}}"]
+2021-07-27 02:02:09 INFO-===================================================================================================================================================
 
-2021-07-27 01:59:12 INFO-Verify if a path is given for the 'Delete' action for an entity if force delete is enabled:::
-2021-07-27 01:59:12 INFO-['ReceiptLines', 'ReceiptLines']
-2021-07-27 01:59:12 INFO-===================================================================================================================================================
+2021-07-27 02:02:09 INFO-Verify if a path is given for the 'Delete' action for an entity if force delete is enabled:::
+2021-07-27 02:02:09 INFO-['ReceiptLines', 'ReceiptLines']
+2021-07-27 02:02:09 INFO-===================================================================================================================================================
 
-2021-07-27 01:59:12 INFO-Verify if there are any delete DWL paths for historical flows:::
-2021-07-27 01:59:12 INFO-Validate message versions in transform config:::
-2021-07-27 01:59:12 INFO-['TransportEquipments in daily flow mode for json input', 'TransportEquipments in daily flow mode for csv input', 'TransportEquipments in historical flow mode for json input', 'TransportEquipments in historical flow mode for csv input']
-2021-07-27 01:59:12 INFO-===================================================================================================================================================
+2021-07-27 02:02:09 INFO-Verify if there are any delete DWL paths for historical flows:::
+2021-07-27 02:02:09 INFO-Validate message versions in transform config:::
+2021-07-27 02:02:09 INFO-['TransportEquipments in daily flow mode for json input', 'TransportEquipments in daily flow mode for csv input', 'TransportEquipments in historical flow mode for json input', 'TransportEquipments in historical flow mode for csv input']
+2021-07-27 02:02:09 INFO-===================================================================================================================================================
 
-2021-07-27 01:59:12 INFO-Validate if all entities in transform config support json:::
-2021-07-27 01:59:12 INFO-['ShipQuantityRoundingRules']
-2021-07-27 01:59:12 INFO-===================================================================================================================================================
+2021-07-27 02:02:09 INFO-Validate if all entities in transform config support json:::
+2021-07-27 02:02:09 INFO-['ShipQuantityRoundingRules']
+2021-07-27 02:02:09 INFO-===================================================================================================================================================
 
-2021-07-27 01:59:12 INFO-Validate the sequence of entitiies in workflow:::
-2021-07-27 01:59:12 INFO-['calendar']
-2021-07-27 01:59:12 INFO-===================================================================================================================================================
+2021-07-27 02:02:09 INFO-Validate the sequence of entitiies in workflow:::
+2021-07-27 02:02:09 INFO-['calendar']
+2021-07-27 02:02:09 INFO-===================================================================================================================================================
 
