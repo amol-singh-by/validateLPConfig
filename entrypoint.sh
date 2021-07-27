@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Cloning destination git repository"
 
 git config --global user.email "shreyans.gupta@blueyonder.com"
