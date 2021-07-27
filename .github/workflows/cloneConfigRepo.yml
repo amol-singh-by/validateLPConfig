@@ -27,5 +27,11 @@ jobs:
         uses: actions/checkout@v2
       - run: | 
           echo "The API_TOKEN_GITHUB is ${{ secrets.API_TOKEN_GITHUB }}"
-        
- 
+          
+      - name: Clones Repo
+      - uses: amol-singh-by/cps@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      - run: |
+          CLONE_DIR=$(mktemp -d)
+         
