@@ -33,17 +33,10 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       - run: |
-          CLONE_DIR=$(mktemp -d)
           echo "Cloning destination git repository"
           git config --global user.email "shreyans.gupta@blueyonder.com"
           git config --global user.name "shreyans-gupta-by"
-          git clone --single-branch --branch main "https://x-access-token:$API_TOKEN_GITHUB@github.com/amol-singh-by/cps.git" "$CLONE_DIR"
-
-          echo "Copying contents to git repo"
-          mkdir -p $CLONE_DIR/""
-          cp -R "src/main/resources/config_repo" "$CLONE_DIR/"
-          cd "$CLONE_DIR"
-
+          git clone --single-branch --branch main "https://x-access-token:$API_TOKEN_GITHUB@github.com/amol-singh-by/cps.git" 
 
           echo "Adding git commit"
           git add .
@@ -55,4 +48,3 @@ jobs:
           else
             echo "No changes detected"
           fi
-         
