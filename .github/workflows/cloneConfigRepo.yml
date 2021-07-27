@@ -28,7 +28,7 @@ jobs:
       - run: | 
           echo "The API_TOKEN_GITHUB is ${{ secrets.API_TOKEN_GITHUB }}"
           
-      - name: Clones Repo
-        uses: amol-singh-by/validateLPConfig@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      # - name: Clones Repo
+      #   uses: amol-singh-by/validateLPConfig@main
+      #   env:
+      #     API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
