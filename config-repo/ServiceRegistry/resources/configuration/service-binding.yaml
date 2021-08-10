@@ -1,0 +1,20 @@
+!adapter-service-binding-v1
+name: LPA
+serviceDefinition: LPA-2021.1.0
+outboundEndpoints:
+- name: ACK
+  flow:
+    name: exp.ack.out-subflow
+- name: BYDMMessageOut
+  flow:
+    name: exp.bydm-msg-outbound-subflow
+outboundMappings:
+  - receiver: '*'
+    request: 'BYDM:applicationReceiptAcknowledgement:BYDM 2020.3.0'
+    outboundEndpoint: 'ACK'
+  - receiver: '*'
+    request: 'BYDM:plannedSupply:BYDM 2021.2.0'
+    outboundEndpoint: 'BYDMMessageOut'
+  - receiver: '*'
+    request: 'BYDM:priceRecommendation:BYDM 2021.2.0'
+    outboundEndpoint: 'BYDMMessageOut'

@@ -1,0 +1,53 @@
+# config-repo/lpa/lpa-messagesupport.yaml
+
+vts:
+  request: 
+    #Controls whether api endpoint accepts HTTP or HTTPS
+    #config: "vtsHTTPConfiguration"
+    config: "vtsHTTPSConfiguration"
+    path: "vts/api/v1"
+  
+  https:
+    host: "0.0.0.0"
+    port: "9840"
+    tls:
+      keyStore:
+        path: "keystore.jks"
+      trustStore:
+        path: "truststore.jks"
+      
+  http:
+    host: "0.0.0.0"
+    port: "9841"
+  
+srs:
+  useSRSLocalMode: "false"
+  service.name: "LPA"
+  # For Emulation of calls to SRS
+  localModeFullMessageNames: ""
+  service:
+    definition:
+      file:
+        location: "config-repo/ServiceRegistry/resources/configuration/service-definitions/LPA-2021.1.0.yaml"
+    binding:
+      file:
+        location: "config-repo/ServiceRegistry/resources/configuration/service-binding.yaml"
+   
+  request: 
+    #Controls whether api endpoint accepts HTTP or HTTPS
+    #config: "srsHTTPConfiguration"
+    config: "srsHTTPSConfiguration"
+    path: "srs/api/v1"
+    
+  https:
+    host: "0.0.0.0"
+    port: "9820"
+    tls:
+      keyStore:
+        path: "keystore.jks"
+      trustStore:
+        path: "truststore.jks"
+      
+  http:
+    host: "0.0.0.0"
+    port: "9821"
