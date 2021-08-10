@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object",
+  "patternProperties": {
+    "^[ A-Za-z0-9_@./#&+-]*$": {
+      "type": "object",
+      "properties": {
+        "daily": {
+          "type": "object",
+          "properties": {
+            "json": {
+              "type": "object",
+              "patternProperties": {
+                "^[0-9.]*$": {
+                  "type": "object",
+                  "properties": {
+                    "addOrChangeByRefresh": {
+                      "type": "string"
+                    },
+                    "delete": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["addOrChangeByRefresh", "delete"]
+                }
+              }
+            },
+            "csv": {
+              "type": "object",
+              "patternProperties": {
+                "^[0-9.]*$": {
+                  "type": "object",
+                  "properties": {
+                    "addOrChangeByRefresh": {
+                      "type": "string"
+                    },
+                    "delete": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["addOrChangeByRefresh", "delete"]
+                }
+              }
+            }
+          },
+          "required": ["json", "csv"]
+        },
+        "historical": {
+          "type": "object",
+          "properties": {
+            "json": {
+              "type": "object",
+              "patternProperties": {
+                "^[0-9.]*$": {
+                  "type": "object",
+                  "properties": {
+                    "addOrChangeByRefresh": {
+                      "type": "string"
+                    },
+                    "delete": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["addOrChangeByRefresh", "delete"]
+                }
+              }
+            },
+            "csv": {
+              "type": "object",
+              "patternProperties": {
+                "^[0-9.]*$": {
+                  "type": "object",
+                  "properties": {
+                    "addOrChangeByRefresh": {
+                      "type": "string"
+                    },
+                    "delete": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["addOrChangeByRefresh", "delete"]
+                }
+              }
+            }
+          },
+          "required": ["json", "csv"]
+        }
+      },
+      "required": ["daily","historical"]
+    }
+  }
+}
