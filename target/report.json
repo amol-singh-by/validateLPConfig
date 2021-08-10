@@ -1,1 +1,45 @@
-
+{
+    "Test for workflowconfig.json schema validation": [
+        false,
+        "Given JSON data is invalid 'false' is not of type 'boolean'",
+        "'false' is not of type 'boolean'\n\nFailed validating 'type' in schema['properties']['workflow']['patternProperties']['^[ A-Za-z0-9_@./#&+-]*$']['properties']['bulkJsonStreamingApplicable']:\n    {'type': 'boolean'}\n\nOn instance['workflow']['roundingRule']['bulkJsonStreamingApplicable']:\n    'false'"
+    ],
+    "Test for transformconfig.json schema validation": [
+        false,
+        "Given JSON data is invalid 'historical' is a required property",
+        "'historical' is a required property\n\nFailed validating 'required' in schema['patternProperties']['^[ A-Za-z0-9_@./#&+-]*$']:\n    {'properties': {'daily': {'properties': {'csv': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},\n                                                                                                        'delete': {'type': 'string'}},\n                                                                                         'required': ['addOrChangeByRefresh',\n                                                                                                      'delete'],\n                                                                                         'type': 'object'}},\n                                                     'type': 'object'},\n                                             'json': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},\n                                                                                                         'delete': {'type': 'string'}},\n                                                                                          'required': ['addOrChangeByRefresh',\n                                                                                                       'delete'],\n                                                                                          'type': 'object'}},\n                                                      'type': 'object'}},\n                              'required': ['json', 'csv'],\n                              'type': 'object'},\n                    'historical': {'properties': {'csv': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},\n                                                                                                             'delete': {'type': 'string'}},\n                                                                                              'required': ['addOrChangeByRefresh',\n                                                                                                           'delete'],\n                                                                                              'type': 'object'}},\n                                                          'type': 'object'},\n                                                  'json': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},\n                                                                                                              'delete': {'type': 'string'}},\n                                                                                               'required': ['addOrChangeByRefresh',\n                                                                                                            'delete'],\n                                                                                               'type': 'object'}},\n                                                           'type': 'object'}},\n                                   'required': ['json', 'csv'],\n                                   'type': 'object'}},\n     'required': ['daily', 'historical'],\n     'type': 'object'}\n\nOn instance['ShipQuantityRoundingRules']:\n    {'daily': {'csv': {'2021.2.0': {'addOrChangeByRefresh': 'dataweave/bydm_dwl/roundingRule/2021.2.0/RoundingRule-to-ShipQuantityRoundingRules-CSV.dwl'}}}}"
+    ],
+    "Test for Service Definition and Workflow dependency": [
+        "demandForecastUnit"
+    ],
+    "Test for workflow and transformConfig dependency": [
+        "ProcurementCalendarTimes"
+    ],
+    "Test for incremental date when NEXT_DAY present in the workflowConfig": [
+        {
+            "sequenceNo": 2,
+            "name": "StockParameters",
+            "deleteApplicable": true,
+            "datePolicy": "NEXT_DAY"
+        }
+    ],
+    "Test for daily and historical present in the transformConfig for every entity": [
+        "Missing historical in ShipQuantityRoundingRules : {'daily': {'csv': {'2021.2.0': {'addOrChangeByRefresh': 'dataweave/bydm_dwl/roundingRule/2021.2.0/RoundingRule-to-ShipQuantityRoundingRules-CSV.dwl'}}}}"
+    ],
+    "Verify if a path is given for the 'Delete' action for an entity if force delete is enabled": [
+        "ReceiptLines",
+        "ReceiptLines"
+    ],
+    "Validate message versions in transform config": [
+        "TransportEquipments in daily flow mode for json input",
+        "TransportEquipments in daily flow mode for csv input",
+        "TransportEquipments in historical flow mode for json input",
+        "TransportEquipments in historical flow mode for csv input"
+    ],
+    "Validate if all entities in transform config support json": [
+        "ShipQuantityRoundingRules"
+    ],
+    "Validate the sequence of entitiies in workflow": [
+        "calendar"
+    ]
+}
