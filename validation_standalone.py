@@ -17,6 +17,12 @@ SERVICE_DEF_PATH = os.path.join(os.path.dirname(__file__), 'config_repo/lpa/dev/
 WORKFLOW_CFG_PATH = os.path.join(os.path.dirname(__file__), 'config_repo/lpa/dev/v1/resources/config/workflowConfig.json')
 TRANSFORM_CFG_PATH = os.path.join(os.path.dirname(__file__), 'config_repo/lpa/dev/v1/resources/config/transformConfig.json')
 
+# SERVICE_DEF_PATH = r"C:\clone_develop\lde-8342\lde\src\main\resources\config-repo\ServiceRegistry\resources\configuration" \
+#                    r"\service-definitions\LPA-2021.1.0.yaml "
+# WORKFLOW_CFG_PATH = r"C:\clone_develop\lde-8342\lde\src\main\resources\config-repo\lpa\resources\config\workflowConfig.json"
+# TRANSFORM_CFG_PATH = r"C:\clone_develop\lde-8342\lde\src\main\resources\config-repo\lpa\resources\config\transformConfig" \
+#                      r".json "
+
 
 def load_servicedefinition_entitylist() -> []:
     """
@@ -121,6 +127,7 @@ def get_schema_workflow():
     """
     try:
         file_path = (r'config_repo/lpa/dev/v1/resources/config/workflowconfig_schema.json')
+        # file_path = (r'C:/Users/1026979/Desktop/workflowconfig_schema.json')
 
         # wrkflow_schema_data = open(file_path)
         # print(wrkflow_schema_data)
@@ -137,6 +144,7 @@ def get_schema_transform():
     """
     try:
         file_path = (r'config_repo/lpa/dev/v1/resources/config/transformconfig_schema.json')
+        # file_path = (r'C:/Users/1026979/Desktop/transformconfig_schema.json')
 
         # wrkflow_schema_data = open(file_path)
         # print(wrkflow_schema_data)
@@ -158,11 +166,11 @@ def validate_json_workflow(json_data):
         jsonschema.validate(instance=json_data, schema=wrkflow_schema)
     except jsonschema.exceptions.ValidationError as error:
         logging.error(error)
-        err = "Given JSON data is invalid"
-        return False, err
+        err = "Given JSON data is invalid " + error.message
+        return False, err, str(error)
 
     result = "JSON data is valid"
-    return True, result
+    return True, result, ""
 
 def validate_json_transform(json_data):
     """
@@ -176,8 +184,8 @@ def validate_json_transform(json_data):
         jsonschema.validate(instance=json_data, schema=wrkflow_schema)
     except jsonschema.exceptions.ValidationError as error:
         logging.error(error)
-        err = "Given JSON data is invalid"
-        return False, err
+        err = "Given JSON data is invalid " + error.message
+        return False, err, str(error)
 
     result = "JSON data is valid"
     return True, result
@@ -335,65 +343,99 @@ def validate_sequence_nos_workflow_config():
 
 
 # Testing the scenarios
-
+validation_report_dict = {}
 # Test for workflowconfig.json schema validation - 1
 logging.info("Test for workflowconfig.json schema validation:::")
 logging.info((validate_json_workflow(load_json_data(""))))
+validation_report_dict['Test for workflowconfig.json schema validation'] = validate_json_workflow(load_json_data(""))
 logging.info("===================================================================================================================================================\n")
 
 # Test for transformconfig.json schema validation - 2
 logging.info("Test for transformconfig.json schema validation:::")
 logging.info((validate_json_transform(load_json_data(TRANSFORM_CFG_PATH))))
+validation_report_dict['Test for transformconfig.json schema validation'] = validate_json_transform(load_json_data(TRANSFORM_CFG_PATH))
 logging.info("===================================================================================================================================================\n")
 
 # Test for Service Definition and Workflow dependency - 2
 logging.info("Test for Service Definition and Workflow dependency:::")
 logging.info(diff(load_workflowconfig_entitylist(), load_servicedefinition_entitylist()))
+validation_report_dict['Test for Service Definition and Workflow dependency'] = diff(load_workflowconfig_entitylist(), load_servicedefinition_entitylist())
 logging.info("===================================================================================================================================================\n")
 
 # Test for workflow and transformConfig dependency - 3
 logging.info("Test for workflow and transformConfig dependency:::")
 logging.info(diff(load_workflowconfig_subentitylist()[0], load_transformconfig_subentitylist()))
+validation_report_dict['Test for workflow and transformConfig dependency'] = diff(load_workflowconfig_subentitylist()[0], load_transformconfig_subentitylist())
 logging.info("===================================================================================================================================================\n")
 
 # Test for incremental date when NEXT_DAY present in the workflowConfig - 9
 logging.info("Test for incremental date when NEXT_DAY present in the workflowConfig:::")
 logging.info(checkdatepolicy_incrementaldate_dependency_workflowconfig())
+validation_report_dict['Test for incremental date when NEXT_DAY present in the workflowConfig'] = checkdatepolicy_incrementaldate_dependency_workflowconfig()
 logging.info("===================================================================================================================================================\n")
 
 # Test for daily and historical present in the transformConfig for every entity - 15
 logging.info("Test for daily and historical present in the transformConfig for every entity:::")
 validateDelForHistorical = checkdailyandhistorical_presence_workflowconfig()
 logging.info(validateDelForHistorical)
+validation_report_dict['Test for daily and historical present in the transformConfig for every entity'] = validateDelForHistorical
 logging.info("===================================================================================================================================================\n")
 
 
 # Verify if a path is given for the "Delete" action for an entity if force delete is enabled
 logging.info("Verify if a path is given for the 'Delete' action for an entity if force delete is enabled:::")
 logging.info(validate_del_file_for_fc())
+validation_report_dict["Verify if a path is given for the 'Delete' action for an entity if force delete is enabled"] = validate_del_file_for_fc()
 logging.info("===================================================================================================================================================\n")
 
 
 # Verify if there are any delete DWL paths for historical flows
 logging.info("Verify if there are any delete DWL paths for historical flows:::")
 if (len(validateDelForHistorical) == 0):
-  logging.info(validate_del_for_historical())
-  logging.info("===================================================================================================================================================\n")
+    logging.info(validate_del_for_historical())
+    validation_report_dict["Verify if there are any delete DWL paths for historical flows"] = validate_del_for_historical()
+    logging.info("===================================================================================================================================================\n")
 
 
 # Validate message versions in transform config
 logging.info("Validate message versions in transform config:::")
 logging.info(validate_transform_config_versions_with_sd())
+validation_report_dict["Validate message versions in transform config"] = validate_transform_config_versions_with_sd()
 logging.info("===================================================================================================================================================\n")
 
 
 # Validate if all entities in transform config support json
 logging.info("Validate if all entities in transform config support json:::")
 logging.info(validate_json_type_in_transform_config())
+validation_report_dict["Validate if all entities in transform config support json"] = validate_json_type_in_transform_config()
 logging.info("===================================================================================================================================================\n")
 
 
 # Validate the sequence of entitiies in workflow_
 logging.info("Validate the sequence of entitiies in workflow:::")
 logging.info(validate_sequence_nos_workflow_config())
+validation_report_dict["Validate the sequence of entitiies in workflow"] = validate_sequence_nos_workflow_config()
 logging.info("===================================================================================================================================================\n")
+
+
+# validation_report_dict = {'validation': [
+#     {"Test":  "Test for workflowconfig.json schema validation",
+#         "result": validate_json_workflow(load_json_data(""))
+#     },
+#     {"Test":  "Test for Service Definition and Workflow dependency",
+#      "result": validate_json_workflow(load_json_data(""))
+#      },
+#     {"Test":  "Test for workflowconfig.json schema validation",
+#      "result": validate_json_workflow(load_json_data(""))
+#      },
+#     {"Test":  "Test for workflowconfig.json schema validation",
+#      "result": validate_json_workflow(load_json_data(""))
+#      }
+#                     ]
+#                }
+
+
+validate_report_json = json.dumps(validation_report_dict)
+
+with open('report.json', 'w') as f:
+    json.dump(validate_report_json, f, indent=4, sort_keys=True)
