@@ -1,4 +1,0 @@
-!service-v1
-name: Connect-Ingestion-Service
-serviceDefinition: LPA-2021.1.0
-enabled: true
