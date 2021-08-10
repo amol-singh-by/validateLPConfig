@@ -1,0 +1,22 @@
+{
+	"OrderProposals": {
+    	"json": {
+        	"2021.2.0": {
+            	"addOrChangeByRefresh": "dataweave/bydm_dwl/plannedSupply/2021.2.0/vendorOrderProposals-to-plannedSupply.dwl"
+			},
+            "default": {
+                "addOrChangeByRefresh": "dataweave/bydm_dwl/plannedSupply/2021.2.0/vendorOrderProposals-to-plannedSupply.dwl"
+            }
+    	}
+ 	},
+ 	"PriceProposals": {
+    	"json": {
+        	"2021.2.0": {
+            	"addOrChangeByRefresh": "dataweave/bydm_dwl/priceRecommendation/2021.2.0/priceProposals-to-priceRecommendation.dwl"
+			},
+            "default": {
+                "addOrChangeByRefresh": "dataweave/bydm_dwl/priceRecommendation/2021.2.0/priceProposals-to-priceRecommendation.dwl"
+            }
+    	}
+ 	}
+}

@@ -1,0 +1,43 @@
+# config-repo/lpa/lpa-canmodelservice.yaml
+
+bydm:
+  canmodel:
+    #config: "BYDM_Validate_Config_File_Cache"
+    #config: "BYDM_Validate_Config_Obj_Store_Cache"
+    config: "BYDM_Validate_Config_Local"
+    # Multiple version should provide by comma separated. Example: "BYDM 2021.2.0-0,BYDM 2021.1.0"
+    versions: "BYDM 2021.3.0"
+    #validation accepts true, false
+    validation: "true"
+    #codeList accepts IGNORE, WARNING, ERROR
+    codeList: "IGNORE"
+
+    caching: "true"
+
+    codelist : "ISOTypeCode,ItemLocationTypeCode,ItemTypeCode,LocationTypeCode,SalesTypeCode,TimeMeasurementTypeCode,ItemShoppingStatusTypeCode,PricingActivityTypeCode,CompetitorTypeCode"
+
+canmodel:
+  request:
+    #Controls whether api endpoint accepts HTTP or HTTPS with Local File or Object Store caching
+    config: "canmodelHTTPSConfig"
+    #config: "canmodelHTTPConfig"
+
+  https:
+    host: "0.0.0.0"
+    port: "9860"
+    tls:
+      keyStore:
+        path: "keystore.jks"
+      trustStore:
+        path: "truststore.jks"
+
+  http:
+    host: "0.0.0.0"
+    port: "9861"
+
+  # Enable below property if using file cache. Currently disabled because of temporry issues with file caching
+  fileCache:
+    directory: "/location/to/file/path"
+
+  webcontent:
+    basePath: "/"
