@@ -127,7 +127,7 @@ def get_schema_workflow():
     """
     try:
         file_path = (r'schemaToValidate/workflowconfig_schema.json')
-        # file_path = (r'C:/Users/1026979/Desktop/workflowconfig_schema.json')
+        #file_path = (r'C:/Users/1026979/Desktop/workflowconfig_schema.json')
 
         # wrkflow_schema_data = open(file_path)
         # print(wrkflow_schema_data)
@@ -144,7 +144,7 @@ def get_schema_transform():
     """
     try:
         file_path = (r'schemaToValidate/transformconfig_schema.json')
-        # file_path = (r'C:/Users/1026979/Desktop/transformconfig_schema.json')
+        #file_path = (r'C:/Users/1026979/Desktop/transformconfig_schema.json')
 
         # wrkflow_schema_data = open(file_path)
         # print(wrkflow_schema_data)
@@ -167,10 +167,11 @@ def validate_json_workflow(json_data):
     except jsonschema.exceptions.ValidationError as error:
         logging.error(error)
         err = "Given JSON data is invalid " + error.message
-        return False, err, str(error)
+        list_desc = [err, str(error)]
+        return "Fail", list_desc
 
     result = "JSON data is valid"
-    return True, result, ""
+    return "Pass", []
 
 def validate_json_transform(json_data):
     """
@@ -185,10 +186,11 @@ def validate_json_transform(json_data):
     except jsonschema.exceptions.ValidationError as error:
         logging.error(error)
         err = "Given JSON data is invalid " + error.message
-        return False, err, str(error)
+        list_desc = [err, str(error)]
+        return "Fail", list_desc
 
     result = "JSON data is valid"
-    return True, result
+    return "Pass", []
 
 def load_json_data(file_path: str):
     try:
@@ -342,6 +344,16 @@ def validate_sequence_nos_workflow_config():
     return list_wrong_seq_of_entities
 
 
+def getReportPassFail(value):
+    if(len(value) == 0):
+      result = "Pass"
+      return result, []
+    else:
+      result = "Fail"
+      dict_desc = {"error": value}
+      return result, dict_desc.get("error")
+
+
 # Testing the scenarios
 validation_report_dict = {}
 # Test for workflowconfig.json schema validation - 1
@@ -359,24 +371,24 @@ logging.info("==================================================================
 # Test for Service Definition and Workflow dependency - 2
 logging.info("Test for Service Definition and Workflow dependency:::")
 logging.info(diff(load_workflowconfig_entitylist(), load_servicedefinition_entitylist()))
-validation_report_dict['Test for Service Definition and Workflow dependency'] = diff(load_workflowconfig_entitylist(), load_servicedefinition_entitylist())
+validation_report_dict['Test for Service Definition and Workflow dependency'] = getReportPassFail(diff(load_workflowconfig_entitylist(), load_servicedefinition_entitylist()))
 logging.info("===================================================================================================================================================\n")
 
 # Test for workflow and transformConfig dependency - 3
 logging.info("Test for workflow and transformConfig dependency:::")
 logging.info(diff(load_workflowconfig_subentitylist()[0], load_transformconfig_subentitylist()))
-validation_report_dict['Test for workflow and transformConfig dependency'] = diff(load_workflowconfig_subentitylist()[0], load_transformconfig_subentitylist())
+validation_report_dict['Test for workflow and transformConfig dependency'] = getReportPassFail(diff(load_workflowconfig_subentitylist()[0], load_transformconfig_subentitylist()))
 logging.info("===================================================================================================================================================\n")
 
 # Test for incremental date when NEXT_DAY present in the workflowConfig - 9
 logging.info("Test for incremental date when NEXT_DAY present in the workflowConfig:::")
 logging.info(checkdatepolicy_incrementaldate_dependency_workflowconfig())
-validation_report_dict['Test for incremental date when NEXT_DAY present in the workflowConfig'] = checkdatepolicy_incrementaldate_dependency_workflowconfig()
+validation_report_dict['Test for incremental date when NEXT_DAY present in the workflowConfig'] = getReportPassFail(checkdatepolicy_incrementaldate_dependency_workflowconfig())
 logging.info("===================================================================================================================================================\n")
 
 # Test for daily and historical present in the transformConfig for every entity - 15
 logging.info("Test for daily and historical present in the transformConfig for every entity:::")
-validateDelForHistorical = checkdailyandhistorical_presence_workflowconfig()
+validateDelForHistorical = getReportPassFail(checkdailyandhistorical_presence_workflowconfig())
 logging.info(validateDelForHistorical)
 validation_report_dict['Test for daily and historical present in the transformConfig for every entity'] = validateDelForHistorical
 logging.info("===================================================================================================================================================\n")
@@ -385,7 +397,7 @@ logging.info("==================================================================
 # Verify if a path is given for the "Delete" action for an entity if force delete is enabled
 logging.info("Verify if a path is given for the 'Delete' action for an entity if force delete is enabled:::")
 logging.info(validate_del_file_for_fc())
-validation_report_dict["Verify if a path is given for the 'Delete' action for an entity if force delete is enabled"] = validate_del_file_for_fc()
+validation_report_dict["Verify if a path is given for the 'Delete' action for an entity if force delete is enabled"] = getReportPassFail(validate_del_file_for_fc())
 logging.info("===================================================================================================================================================\n")
 
 
@@ -393,49 +405,35 @@ logging.info("==================================================================
 logging.info("Verify if there are any delete DWL paths for historical flows:::")
 if (len(validateDelForHistorical) == 0):
     logging.info(validate_del_for_historical())
-    validation_report_dict["Verify if there are any delete DWL paths for historical flows"] = validate_del_for_historical()
+    validation_report_dict["Verify if there are any delete DWL paths for historical flows"] = getReportPassFail(validate_del_for_historical())
     logging.info("===================================================================================================================================================\n")
 
 
 # Validate message versions in transform config
 logging.info("Validate message versions in transform config:::")
 logging.info(validate_transform_config_versions_with_sd())
-validation_report_dict["Validate message versions in transform config"] = validate_transform_config_versions_with_sd()
+validation_report_dict["Validate message versions in transform config"] = getReportPassFail(validate_transform_config_versions_with_sd())
 logging.info("===================================================================================================================================================\n")
 
 
 # Validate if all entities in transform config support json
 logging.info("Validate if all entities in transform config support json:::")
 logging.info(validate_json_type_in_transform_config())
-validation_report_dict["Validate if all entities in transform config support json"] = validate_json_type_in_transform_config()
+validation_report_dict["Validate if all entities in transform config support json"] = getReportPassFail(validate_json_type_in_transform_config())
 logging.info("===================================================================================================================================================\n")
 
 
 # Validate the sequence of entitiies in workflow_
 logging.info("Validate the sequence of entitiies in workflow:::")
 logging.info(validate_sequence_nos_workflow_config())
-validation_report_dict["Validate the sequence of entitiies in workflow"] = validate_sequence_nos_workflow_config()
+validation_report_dict["Validate the sequence of entitiies in workflow"] = getReportPassFail(validate_sequence_nos_workflow_config())
 logging.info("===================================================================================================================================================\n")
-
-
-# validation_report_dict = {'validation': [
-#     {"Test":  "Test for workflowconfig.json schema validation",
-#         "result": validate_json_workflow(load_json_data(""))
-#     },
-#     {"Test":  "Test for Service Definition and Workflow dependency",
-#      "result": validate_json_workflow(load_json_data(""))
-#      },
-#     {"Test":  "Test for workflowconfig.json schema validation",
-#      "result": validate_json_workflow(load_json_data(""))
-#      },
-#     {"Test":  "Test for workflowconfig.json schema validation",
-#      "result": validate_json_workflow(load_json_data(""))
-#      }
-#                     ]
-#                }
-
 
 validate_report_json = json.dumps(validation_report_dict, indent=4)
 
-with open('./target/report.json', 'w') as f:
+with open('report.json', 'w') as f:
     f.write(validate_report_json)
+
+# with open('report.json', 'w') as f:
+#     json.dumps(validate_report_json, f, indent=4, sort_keys=True)
+print(validate_report_json)
