@@ -435,7 +435,7 @@ logging.info("==================================================================
 #                }
 
 
-validate_report_json = json.dumps(validation_report_dict)
+validate_report_json = json.dumps(validation_report_dict, indent=4)
 
 with open('report.json', 'w') as f:
-    json.dump(validate_report_json, f, indent=4, sort_keys=True)
+    f.write(validate_report_json)
