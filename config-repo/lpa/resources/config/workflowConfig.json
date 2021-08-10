@@ -2,7 +2,7 @@
     "workflow":{
         "roundingRule":{
             "canEntity":"roundingRule",
-            "bulkJsonStreamingApplicable":false,
+            "bulkJsonStreamingApplicable":"false",
             "targetEntities":[
                 {
                     "sequenceNo":1,
@@ -26,7 +26,7 @@
                     "deleteApplicable":false
                 },
                 {
-                    "sequenceNo":3,
+                    "sequenceNo":4,
                     "name":"ProcurementCalendarTimes",
                     "deleteApplicable":false
                 }
@@ -124,8 +124,7 @@
                     "sequenceNo":2,
                     "name":"StockParameters",
                     "deleteApplicable":true,
-                    "datePolicy": "SAME_DAY",
-                    "incrementalDate": 2
+                    "datePolicy": "NEXT_DAY"
                 },
                 {
                     "sequenceNo":3,
@@ -281,7 +280,7 @@
                 {
                     "sequenceNo":1,
                     "name":"Events",
-                    "deleteApplicable":true
+                    "deleteApplicable":false
                 },
                 {
                     "sequenceNo":2,
@@ -291,7 +290,7 @@
                 {
                     "sequenceNo":3,
                     "name":"LocalCalendars",
-                    "deleteApplicable":true,
+                    "deleteApplicable":false,
                     "datePolicy": "SAME_DAY",
                     "incrementalDate": 2
                 }
