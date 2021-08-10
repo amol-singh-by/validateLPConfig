@@ -1,1 +1,22 @@
-
+{
+    "Test for workflowconfig.json schema validation": [
+        true,
+        "JSON data is valid",
+        ""
+    ],
+    "Test for transformconfig.json schema validation": [
+        true,
+        "JSON data is valid"
+    ],
+    "Test for Service Definition and Workflow dependency": [
+        "demandForecastUnit"
+    ],
+    "Test for workflow and transformConfig dependency": [],
+    "Test for incremental date when NEXT_DAY present in the workflowConfig": [],
+    "Test for daily and historical present in the transformConfig for every entity": [],
+    "Verify if a path is given for the 'Delete' action for an entity if force delete is enabled": [],
+    "Verify if there are any delete DWL paths for historical flows": [],
+    "Validate message versions in transform config": [],
+    "Validate if all entities in transform config support json": [],
+    "Validate the sequence of entitiies in workflow": []
+}
