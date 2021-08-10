@@ -1,0 +1,8 @@
+!static-receivers-v1
+rules:
+
+# Send to AUDIT any message
+- actions:
+  - operator: ADD
+    receivers:
+    - AUDIT

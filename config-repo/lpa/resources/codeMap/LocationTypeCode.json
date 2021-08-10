@@ -1,0 +1,15 @@
+{  
+    "codeMap": {
+        "name": "LocationTypeCode", 
+        "isBiDirectional": true,
+        "codes": [ 
+          { "key": "STORE", "value": "STORE" }, 
+          { "key": "VIRTUAL", "value": "ONLINESHOP" },
+          { "key": "WAREHOUSE_AND_OR_DEPOT", "value": "SUPPLIER" },
+          { "key": "MANUFACTURING_PLANT", "value": "SUPPLIER" },
+          { "key": "DISTRIBUTION_CENTER", "value": "SUPPLIER" }
+        ],
+        "defaultValue": "CE_DUMMYTYPE",
+        "defaultKey": "CE_DUMMYTYPE"
+        }
+}
