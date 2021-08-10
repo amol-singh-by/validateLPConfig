@@ -7,7 +7,7 @@ import logging
 import os
 
 
-logging.basicConfig(filename="./log.txt",
+logging.basicConfig(filename="./logs/log.txt",
                     filemode='a',
                     format='%(asctime)s %(levelname)s-%(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
@@ -126,7 +126,7 @@ def get_schema_workflow():
     :return:
     """
     try:
-        file_path = (r'config_repo/lpa/dev/v1/resources/config/workflowconfig_schema.json')
+        file_path = (r'schemaToValidate/workflowconfig_schema.json')
         # file_path = (r'C:/Users/1026979/Desktop/workflowconfig_schema.json')
 
         # wrkflow_schema_data = open(file_path)
@@ -143,7 +143,7 @@ def get_schema_transform():
     :return:
     """
     try:
-        file_path = (r'config_repo/lpa/dev/v1/resources/config/transformconfig_schema.json')
+        file_path = (r'schemaToValidate/transformconfig_schema.json')
         # file_path = (r'C:/Users/1026979/Desktop/transformconfig_schema.json')
 
         # wrkflow_schema_data = open(file_path)
