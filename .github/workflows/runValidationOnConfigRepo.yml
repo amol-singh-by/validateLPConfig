@@ -65,22 +65,4 @@ jobs:
       run: |
         python validationScriptForLPA/validation_standalone.py
     
-    - name: Commit report log file
-      id: commit
-      run: |
-        git config --local user.email "shreyans.gupta@blueyonder.com"
-        git config --local user.name "shreyans-gupta-by"
-        git add --all
-        if [-z "$(git status --porcelain)"]; then
-           echo "::set-output name=push::false"
-        else
-           git commit -m "Add changes" -a
-           echo "::set-output name=push::true"
-        fi
-      shell: bash
-    - name: Push report log file changes
-      if: steps.commit.outputs.push == 'true'
-      uses: ad-m/github-push-action@master
-      with:
-         github_token: ${{ secrets.GITHUB_TOKEN }}
-         
+   
