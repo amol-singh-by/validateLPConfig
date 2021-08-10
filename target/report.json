@@ -1,1 +1,23 @@
-
+{
+    "Test for workflowconfig.json schema validation": [
+        true,
+        "JSON data is valid",
+        ""
+    ],
+    "Test for transformconfig.json schema validation": [
+        false,
+        "Given JSON data is invalid 'csv' is a required property",
+        "'csv' is a required property\n\nFailed validating 'required' in schema['patternProperties']['^[ A-Za-z0-9_@./#&+-]*$']['properties']['daily']:\n    {'properties': {'csv': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},\n                                                                               'delete': {'type': 'string'}},\n                                                                'required': ['addOrChangeByRefresh',\n                                                                             'delete'],\n                                                                'type': 'object'}},\n                            'type': 'object'},\n                    'json': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},\n                                                                                'delete': {'type': 'string'}},\n                                                                 'required': ['addOrChangeByRefresh',\n                                                                              'delete'],\n                                                                 'type': 'object'}},\n                             'type': 'object'}},\n     'required': ['json', 'csv'],\n     'type': 'object'}\n\nOn instance['ProductGroups']['daily']:\n    {'json': {'2021.2.0': {'addOrChangeByRefresh': 'dataweave/bydm_dwl/itemHierarchyLevelMember/2021.2.0/ItemHierarchyLevelMember-to-ProductGroups.dwl'}}}"
+    ],
+    "Test for Service Definition and Workflow dependency": [
+        "demandForecastUnit"
+    ],
+    "Test for workflow and transformConfig dependency": [],
+    "Test for incremental date when NEXT_DAY present in the workflowConfig": [],
+    "Test for daily and historical present in the transformConfig for every entity": [],
+    "Verify if a path is given for the 'Delete' action for an entity if force delete is enabled": [],
+    "Verify if there are any delete DWL paths for historical flows": [],
+    "Validate message versions in transform config": [],
+    "Validate if all entities in transform config support json": [],
+    "Validate the sequence of entitiies in workflow": []
+}

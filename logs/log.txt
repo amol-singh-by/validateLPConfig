@@ -2,3 +2,87 @@
 2021-07-07 10:35:35 INFO-C:\clone_develop\validationService\validationService_v0.1\validationScriptForLPA\../schemaToValidate/workflowconfig_schema.json
 2021-07-07 11:02:55 INFO-C:\clone_develop\validationService\validationService_v0.1\validationScriptForLPA\../schemaToValidate/workflowconfig_schema.json
 2021-07-07 11:03:02 INFO-C:\clone_develop\validationService\validationService_v0.1\validationScriptForLPA\../schemaToValidate/workflowconfig_schema.json
+2021-08-10 10:28:49 INFO-Test for workflowconfig.json schema validation:::
+2021-08-10 10:28:49 INFO-(True, 'JSON data is valid', '')
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
+2021-08-10 10:28:49 INFO-Test for transformconfig.json schema validation:::
+2021-08-10 10:28:49 ERROR-'csv' is a required property
+
+Failed validating 'required' in schema['patternProperties']['^[ A-Za-z0-9_@./#&+-]*$']['properties']['daily']:
+    {'properties': {'csv': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},
+                                                                               'delete': {'type': 'string'}},
+                                                                'required': ['addOrChangeByRefresh',
+                                                                             'delete'],
+                                                                'type': 'object'}},
+                            'type': 'object'},
+                    'json': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},
+                                                                                'delete': {'type': 'string'}},
+                                                                 'required': ['addOrChangeByRefresh',
+                                                                              'delete'],
+                                                                 'type': 'object'}},
+                             'type': 'object'}},
+     'required': ['json', 'csv'],
+     'type': 'object'}
+
+On instance['ProductGroups']['daily']:
+    {'json': {'2021.2.0': {'addOrChangeByRefresh': 'dataweave/bydm_dwl/itemHierarchyLevelMember/2021.2.0/ItemHierarchyLevelMember-to-ProductGroups.dwl'}}}
+2021-08-10 10:28:49 INFO-(False, "Given JSON data is invalid 'csv' is a required property", "'csv' is a required property\n\nFailed validating 'required' in schema['patternProperties']['^[ A-Za-z0-9_@./#&+-]*$']['properties']['daily']:\n    {'properties': {'csv': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},\n                                                                               'delete': {'type': 'string'}},\n                                                                'required': ['addOrChangeByRefresh',\n                                                                             'delete'],\n                                                                'type': 'object'}},\n                            'type': 'object'},\n                    'json': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},\n                                                                                'delete': {'type': 'string'}},\n                                                                 'required': ['addOrChangeByRefresh',\n                                                                              'delete'],\n                                                                 'type': 'object'}},\n                             'type': 'object'}},\n     'required': ['json', 'csv'],\n     'type': 'object'}\n\nOn instance['ProductGroups']['daily']:\n    {'json': {'2021.2.0': {'addOrChangeByRefresh': 'dataweave/bydm_dwl/itemHierarchyLevelMember/2021.2.0/ItemHierarchyLevelMember-to-ProductGroups.dwl'}}}")
+2021-08-10 10:28:49 ERROR-'csv' is a required property
+
+Failed validating 'required' in schema['patternProperties']['^[ A-Za-z0-9_@./#&+-]*$']['properties']['daily']:
+    {'properties': {'csv': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},
+                                                                               'delete': {'type': 'string'}},
+                                                                'required': ['addOrChangeByRefresh',
+                                                                             'delete'],
+                                                                'type': 'object'}},
+                            'type': 'object'},
+                    'json': {'patternProperties': {'^[0-9.]*$': {'properties': {'addOrChangeByRefresh': {'type': 'string'},
+                                                                                'delete': {'type': 'string'}},
+                                                                 'required': ['addOrChangeByRefresh',
+                                                                              'delete'],
+                                                                 'type': 'object'}},
+                             'type': 'object'}},
+     'required': ['json', 'csv'],
+     'type': 'object'}
+
+On instance['ProductGroups']['daily']:
+    {'json': {'2021.2.0': {'addOrChangeByRefresh': 'dataweave/bydm_dwl/itemHierarchyLevelMember/2021.2.0/ItemHierarchyLevelMember-to-ProductGroups.dwl'}}}
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
+2021-08-10 10:28:49 INFO-Test for Service Definition and Workflow dependency:::
+2021-08-10 10:28:49 INFO-['demandForecastUnit']
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
+2021-08-10 10:28:49 INFO-Test for workflow and transformConfig dependency:::
+2021-08-10 10:28:49 INFO-[]
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
+2021-08-10 10:28:49 INFO-Test for incremental date when NEXT_DAY present in the workflowConfig:::
+2021-08-10 10:28:49 INFO-[]
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
+2021-08-10 10:28:49 INFO-Test for daily and historical present in the transformConfig for every entity:::
+2021-08-10 10:28:49 INFO-[]
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
+2021-08-10 10:28:49 INFO-Verify if a path is given for the 'Delete' action for an entity if force delete is enabled:::
+2021-08-10 10:28:49 INFO-[]
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
+2021-08-10 10:28:49 INFO-Verify if there are any delete DWL paths for historical flows:::
+2021-08-10 10:28:49 INFO-[]
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
+2021-08-10 10:28:49 INFO-Validate message versions in transform config:::
+2021-08-10 10:28:49 INFO-[]
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
+2021-08-10 10:28:49 INFO-Validate if all entities in transform config support json:::
+2021-08-10 10:28:49 INFO-[]
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
+2021-08-10 10:28:49 INFO-Validate the sequence of entitiies in workflow:::
+2021-08-10 10:28:49 INFO-[]
+2021-08-10 10:28:49 INFO-===================================================================================================================================================
+
