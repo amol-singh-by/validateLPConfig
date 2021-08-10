@@ -1,1 +1,44 @@
-
+{
+    "Test for workflowconfig.json schema validation": [
+        "Pass",
+        []
+    ],
+    "Test for transformconfig.json schema validation": [
+        "Pass",
+        []
+    ],
+    "Test for Service Definition and Workflow dependency": [
+        "Fail",
+        [
+            "demandForecastUnit"
+        ]
+    ],
+    "Test for workflow and transformConfig dependency": [
+        "Pass",
+        []
+    ],
+    "Test for incremental date when NEXT_DAY present in the workflowConfig": [
+        "Pass",
+        []
+    ],
+    "Test for daily and historical present in the transformConfig for every entity": [
+        "Pass",
+        []
+    ],
+    "Verify if a path is given for the 'Delete' action for an entity if force delete is enabled": [
+        "Pass",
+        []
+    ],
+    "Validate message versions in transform config": [
+        "Pass",
+        []
+    ],
+    "Validate if all entities in transform config support json": [
+        "Pass",
+        []
+    ],
+    "Validate the sequence of entitiies in workflow": [
+        "Pass",
+        []
+    ]
+}
