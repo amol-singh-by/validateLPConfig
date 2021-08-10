@@ -47,7 +47,7 @@ jobs:
     
     - name: 'Verify Artifact File validationService.py to be present'
       run: |
-        $file = "./validation_standalone.py"
+        $file = "./validationScriptForLPA/validation_standalone.py"
         if(!(Test-Path -path $file))
         {
             Write-Error "Expected file does not exist"
@@ -59,11 +59,11 @@ jobs:
     
     - name: run Python code to truncate log file
       run: |
-        python deleteLogs.py
+        python validationScriptForLPA/deleteLogs.py
           
     - name: run Python Validation
       run: |
-        python validation_standalone.py
+        python validationScriptForLPA/validation_standalone.py
     
     - name: Commit report log file
       id: commit
