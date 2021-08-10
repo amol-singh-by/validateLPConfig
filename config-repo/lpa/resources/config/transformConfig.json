@@ -1,0 +1,1046 @@
+{
+    "ShipQuantityRoundingRules": {
+        "daily": {
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/roundingRule/2021.2.0/RoundingRule-to-ShipQuantityRoundingRules-CSV.dwl"
+                }
+            }
+        }
+    },
+    "TransportEquipments": {
+        "daily": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/transportEquipment/2021.2.0/transportEquipment-to-transportEquipments.dwl"
+                }
+            },
+            "csv": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/transportEquipment/2021.2.0/transportEquipment-to-transportEquipments-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/transportEquipment/2021.2.0/transportEquipment-to-transportEquipments.dwl"
+                }
+            },
+            "csv": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/transportEquipment/2021.2.0/transportEquipment-to-transportEquipments-csv.dwl"
+                }
+            }
+        }
+    },
+    "TransportEquipmentCapacities": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/transportEquipment/2021.2.0/transportEquipment-to-transportEquipmentCapacities.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/transportEquipment/2021.2.0/transportEquipment-to-transportEquipmentCapacities-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/transportEquipment/2021.2.0/transportEquipment-to-transportEquipmentCapacities.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/transportEquipment/2021.2.0/transportEquipment-to-transportEquipmentCapacities-csv.dwl"
+                }
+            }
+        }
+    },
+    "AutoApprovalExceptions": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/autoApprovalException/2021.2.0/autoApprovalException-to-autoApprovalExceptions.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/autoApprovalException/2021.2.0/autoApprovalException-to-autoApprovalExceptions-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/autoApprovalException/2021.2.0/autoApprovalException-to-autoApprovalExceptions.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/autoApprovalException/2021.2.0/autoApprovalException-to-autoApprovalExceptions-csv.dwl"
+                }
+            }
+        }
+    },
+    "AutoApprovalRules": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/autoApprovalRule/2021.2.0/autoApprovalRule-to-autoApprovalRules.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/autoApprovalRule/2021.2.0/autoApprovalRule-to-autoApprovalRules-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/autoApprovalRule/2021.2.0/autoApprovalRule-to-autoApprovalRules.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/autoApprovalRule/2021.2.0/autoApprovalRule-to-autoApprovalRules-csv.dwl"
+                }
+            }
+        }
+    },
+    "VendorOrderParameters": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/itemLocation/2021.2.0/itemLocation-to-vendorOrderParameters.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/itemLocation/2021.2.0/itemLocation-to-vendorOrderParameters-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/itemLocation/2021.2.0/itemLocation-to-vendorOrderParameters.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/itemLocation/2021.2.0/itemLocation-to-vendorOrderParameters-csv.dwl"
+                }
+            }
+        }
+    },
+    "PurchaseGroups": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderGroup/2021.2.0/orderGroup-to-purchaseGroups.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderGroup/2021.2.0/orderGroup-to-purchaseGroups-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderGroup/2021.2.0/orderGroup-to-purchaseGroups.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderGroup/2021.2.0/orderGroup-to-purchaseGroups-csv.dwl"
+                }
+            }
+        }
+    },
+    "PurchaseGroupVendorMinimums": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderGroup/2021.2.0/orderGroup-to-purchaseGroupVendorMinimums.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderGroup/2021.2.0/orderGroup-to-purchaseGroupVendorMinimums-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderGroup/2021.2.0/orderGroup-to-purchaseGroupVendorMinimums.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderGroup/2021.2.0/orderGroup-to-purchaseGroupVendorMinimums-csv.dwl"
+                }
+            }
+        }
+    },
+    "AdditionalVendorOrders": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/supplementalOrder/2021.2.0/supplementalOrder-to-additionalVendorOrders.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/supplementalOrder/2021.2.0/supplementalOrder-to-additionalVendorOrders-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/supplementalOrder/2021.2.0/supplementalOrder-to-additionalVendorOrders.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/supplementalOrder/2021.2.0/supplementalOrder-to-additionalVendorOrders-csv.dwl"
+                }
+            }
+        }
+    },
+    "ReceiptLines": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/pointOfSaleItem/2021.2.0/PointOfSale-to-ReceiptLines.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/pointOfSaleItem/2021.2.0/PointOfSale-to-ReceiptLines-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+		    "delete": "dataweave/bydm_dwl/pointOfSaleItem/2021.2.0/PointOfSale-to-ReceiptLines-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/pointOfSaleItem/2021.2.0/PointOfSale-to-ReceiptLines.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+		    "delete": "dataweave/bydm_dwl/pointOfSaleItem/2021.2.0/PointOfSale-to-ReceiptLines-historical-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/pointOfSaleItem/2021.2.0/PointOfSale-to-ReceiptLines-csv.dwl"
+                }
+            }
+        }
+    },
+    "ProductGroups": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/itemHierarchyLevelMember/2021.2.0/ItemHierarchyLevelMember-to-ProductGroups.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/itemHierarchyLevelMember/2021.2.0/ItemHierarchyLevelMember-to-ProductGroups.dwl"
+                }
+            }
+        }
+    },
+    "Locations": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/location/2021.2.0/Location-to-Locations.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/location/2021.2.0/Location-to-Locations-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/location/2021.2.0/Location-to-Locations-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/location/2021.2.0/Location-to-Locations-historical-CSV.dwl"
+                }
+            }
+        }
+    },
+    "UnitTypes": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/measurement/2021.2.0/Measurement-to-UnitTypes.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/measurement/2021.2.0/Measurement-to-UnitTypes.dwl"
+                }
+            }
+        }
+    },
+    "Prices": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/priceSpecification2/2021.2.0/PriceSpecification-to-Prices-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/priceSpecification2/2021.2.0/PriceSpecification-to-Prices.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/priceSpecification2/2021.2.0/PriceSpecification-to-Prices-CSV-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/priceSpecification2/2021.2.0/PriceSpecification-to-Prices-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/priceSpecification2/2021.2.0/PriceSpecification-to-Prices-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/priceSpecification2/2021.2.0/PriceSpecification-to-Prices-CSV-historical.dwl"
+                }
+            }
+        }
+    },
+    "Promotions": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/promotion/2021.2.0/Promotion-to-Promotions-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/promotion/2021.2.0/Promotion-to-Promotions.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/promotion/2021.2.0/Promotion-to-Promotions-CSV-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/promotion/2021.2.0/Promotion-to-Promotions-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/promotion/2021.2.0/Promotion-to-Promotions-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/promotion/2021.2.0/Promotion-to-Promotions-CSV-historical.dwl"
+                }
+            }
+        }
+    },
+    "CommonPromotions": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/promotion/2021.2.0/Promotion-to-CommonPromotion.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/promotion/2021.2.0/Promotion-to-CommonPromotion-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/promotion/2021.2.0/Promotion-to-CommonPromotion-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/promotion/2021.2.0/Promotion-to-CommonPromotion-CSV-historical.dwl"
+                }
+            }
+        }
+    },
+    "Assignments": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/assignment/2021.2.0/itemLocation-to-Assignments-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/assignment/2021.2.0/itemLocation-to-Assignments.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/assignment/2021.2.0/ItemLocation-to-Assignment-CSV-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/assignment/2021.2.0/ItemLocation-to-Assignment-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/assignment/2021.2.0/itemLocation-to-Assignments-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/assignment/2021.2.0/ItemLocation-to-Assignment-CSV-historical.dwl"
+                }
+            }
+        }
+    },
+    "StockParameters": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/stockParameters/2021.2.0/itemLocation-to-StockParameters-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/stockParameters/2021.2.0/itemLocation-to-StockParameters.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/stockParameters/2021.2.0/ItemLocation-to-StockParameters-CSV-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/stockParameters/2021.2.0/ItemLocation-to-StockParameters-CSV.dwl"
+                }
+            } 
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/stockParameters/2021.2.0/itemLocation-to-StockParameters-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/stockParameters/2021.2.0/ItemLocation-to-StockParameters-CSV-historical.dwl"
+                }
+            }
+        }
+    },
+    "OrderItemStatus-receivingAdvice": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/receivingAdvice/2021.2.0/ReceivingAdvice-to-OrderItemStatus.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/receivingAdvice/2021.2.0/ReceivingAdvice-to-OrderItemStatus-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/receivingAdvice/2021.2.0/ReceivingAdvice-to-OrderItemStatus.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/receivingAdvice/2021.2.0/ReceivingAdvice-to-OrderItemStatus-CSV.dwl"
+                }
+            }
+        }
+    },
+    "ProcurementPlans-sourcing": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/sourcing/2021.2.0/Sourcing-to-ProcurementPlans-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/sourcing/2021.2.0/Sourcing-to-ProcurementPlans.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/sourcing/2021.2.0/Sourcing-to-ProcurementPlans-CSV-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/sourcing/2021.2.0/Sourcing-to-ProcurementPlans-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/sourcing/2021.2.0/Sourcing-to-ProcurementPlans-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/sourcing/2021.2.0/Sourcing-to-ProcurementPlans-CSV-historical.dwl"
+                }
+            }
+        }
+    },
+    "OpeningHours": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/calendar/2021.2.0/Calendar-to-OpeningHours.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/calendar/2021.2.0/Calendar-to-OpeningHours.dwl"
+                }
+            }
+        }
+    },
+    "ProcurementCalendars": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/calendar/2021.2.0/Calendar-to-ProcurementCalendars.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/calendar/2021.2.0/Calendar-to-ProcurementCalendars.dwl"
+                }
+            }
+        }
+    },
+    "ProcurementPlans-network": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/network/2021.2.0/network-to-ProcurementPlans-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/network/2021.2.0/network-to-ProcurementPlans.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/network/2021.2.0/network-to-ProcurementPlans-CSV-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/network/2021.2.0/network-to-ProcurementPlans-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/network/2021.2.0/network-to-ProcurementPlans-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/network/2021.2.0/network-to-ProcurementPlans-CSV-historical.dwl"
+                }
+            }
+        }
+    },
+    "Products": {
+        "daily": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/item/2021.3.0/Item-to-Products.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/item/2021.3.0/Item-to-Products-historical.dwl"
+                }
+            }
+        }
+    },
+    "Events": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/events/2021.2.0/Events-to-Events.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/events/2021.2.0/Events-to-Events.dwl"
+                }
+            }
+        }
+    },
+    "UnitConversions": {
+        "daily": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/item/2021.3.0/Item-to-UnitConversions.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/item/2021.3.0/Item-to-UnitConversions-historical.dwl"
+                }
+            }
+        }
+    },
+    "EventCalendars": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/eventCalendars/2021.2.0/Events-to-EventCalendars.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/eventCalendars/2021.2.0/Events-to-EventCalendars.dwl"
+                }
+            }
+        }
+    },
+    "LocalCalendars": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/localCalendars/2021.2.0/Events-to-LocalCalendars.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/localCalendars/2021.2.0/Events-to-LocalCalendars-historical.dwl"
+                }
+            }
+        }
+    },
+    "Orders": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orders/2021.2.0/Order-to-Orders.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orders/2021.2.0/Order-to-Orders-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orders/2021.2.0/Order-to-Orders.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orders/2021.2.0/Order-to-Orders-CSV.dwl"
+                }
+            }
+        }
+    },
+    "OrderItems": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderItems/2021.2.0/Order-to-OrderItems.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderItems/2021.2.0/Order-to-OrderItems-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderItems/2021.2.0/Order-to-OrderItems.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderItems/2021.2.0/Order-to-OrderItems-CSV.dwl"
+                }
+            }
+        }
+    },
+    "OrderItemStatus-Order": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderItemStatus/2021.2.0/Order-to-OrderItemStatus.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderItemStatus/2021.2.0/Order-to-OrderItemStatus-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderItemStatus/2021.2.0/Order-to-OrderItemStatus.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/orderItemStatus/2021.2.0/Order-to-OrderItemStatus-CSV.dwl"
+                }
+            }
+        }
+    },
+    "Stocks": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/stocks/2021.2.0/InventoryOnHand2-to-Stocks.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/stocks/2021.2.0/InventoryOnHand2-to-Stocks-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/stocks/2021.2.0/InventoryOnHand2-to-Stocks.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/stocks/2021.2.0/InventoryOnHand2-to-Stocks-CSV.dwl"
+                }
+            }
+        }
+    },
+    "Sales": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/sales/2021.2.0/InventoryTransaction2-to-Sales.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/sales/2021.2.0/InventoryTransaction2-to-Sales-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/sales/2021.2.0/InventoryTransaction2-to-Sales.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/sales/2021.2.0/InventoryTransaction2-to-Sales-CSV.dwl"
+                }
+            }
+        }
+    },
+    "Relations": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "delete": "dataweave/bydm_dwl/relations/2021.2.0/Relation-to-Relations-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/relations/2021.2.0/Relation-to-Relations.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/relations/2021.2.0/Relation-to-Relations-historical.dwl"
+                }
+            }
+        }
+    },
+    "PricingActivities": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/pricingActivity/2021.2.0/pricingActivity-to-pricingActivities.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                	 "addOrChangeByRefresh": "dataweave/bydm_dwl/pricingActivity/2021.2.0/pricingActivity-to-pricingActivities-csv.dwl"
+                }
+            }
+       	},
+       	"historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/pricingActivity/2021.2.0/pricingActivity-to-pricingActivities-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                	 "addOrChangeByRefresh": "dataweave/bydm_dwl/pricingActivity/2021.2.0/pricingActivity-to-pricingActivities-csv-historical.dwl"
+                }
+            }
+       	}
+    },
+    "Substitutes": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+					"delete": "dataweave/bydm_dwl/substitution/2021.2.0/Substitution-to-Substitutes-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/substitution/2021.2.0/Substitution-to-Substitutes.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+					"delete": "dataweave/bydm_dwl/substitution/2021.2.0/Substitution-to-Substitutes-DEL-CSV.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/substitution/2021.2.0/Substitution-to-Substitutes-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/substitution/2021.2.0/Substitution-to-Substitutes-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/substitution/2021.2.0/Substitution-to-Substitutes-historical-CSV.dwl"
+                }
+            }
+        }
+    },
+    "Products-demandUnit": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/demandUnit/2021.2.0/DU-to-Products.dwl"
+                }
+            }
+       	},
+       	"historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/demandUnit/2021.2.0/DU-to-Products-historical.dwl"
+                }
+            }
+       	}
+    },
+    "ExchangeRates": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+					"delete": "dataweave/bydm_dwl/exchangeRates/2021.2.0/exchangeRate-to-exchangeRates-DEL.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/exchangeRates/2021.2.0/exchangeRate-to-exchangeRates.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/exchangeRates/2021.2.0/exchangeRate-to-exchangeRates-historical.dwl"
+                }
+            }
+        }
+    },
+    "Multipacks": {
+		"daily": {
+			"json": {
+				"2021.3.0": {
+					"delete": "dataweave/bydm_dwl/item/2021.3.0/Item-to-Multipacks-del.dwl",
+					"addOrChangeByRefresh": "dataweave/bydm_dwl/item/2021.3.0/Item-to-Multipacks.dwl"
+				}
+			}
+		},
+		"historical": {
+			"json": {
+				"2021.3.0": {
+					"addOrChangeByRefresh": "dataweave/bydm_dwl/item/2021.3.0/Item-to-Multipacks-historical.dwl"
+				}
+			}
+		}
+	},
+	"PriorityPredictions": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                	"delete": "dataweave/bydm_dwl/forecast2/2021.2.0/Forecast2-to-PriorityPredictions-Delete.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/forecast2/2021.2.0/Forecast2-to-PriorityPredictions.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                	"delete": "dataweave/bydm_dwl/forecast2/2021.2.0/Forecast2-to-PriorityPredictions-Delete-CSV.dwl",
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/forecast2/2021.2.0/Forecast2-to-PriorityPredictions-CSV.dwl"
+                }
+            }
+        },
+		"historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/forecast2/2021.2.0/Forecast2-to-PriorityPredictions.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/forecast2/2021.2.0/Forecast2-to-PriorityPredictions-CSV.dwl"
+                }
+            }
+        }
+    },
+    "ShopStatus": {
+        "daily": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/itemShoppingStatus/2021.2.0/itemShoppingStatus-to-ShopStatus.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/itemShoppingStatus/2021.2.0/itemShoppingStatus-to-ShopStatus-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/itemShoppingStatus/2021.2.0/itemShoppingStatus-to-ShopStatus-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.2.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/itemShoppingStatus/2021.2.0/itemShoppingStatus-to-ShopStatus-historical-CSV.dwl"
+                }
+            }
+        }
+    },
+	"LocationClusters": {
+        "daily": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/locationCluster/2021.3.0/LocationCluster-to-LocationClusters.dwl"
+                }
+            },
+            "csv": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/locationCluster/2021.3.0/LocationCluster-to-LocationClusters-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/locationCluster/2021.3.0/LocationCluster-to-LocationClusters.dwl"
+                }
+            },
+            "csv": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/locationCluster/2021.3.0/LocationCluster-to-LocationClusters-CSV.dwl"
+                }
+            }
+        }
+    },
+    "LocationClusterMembers": {
+        "daily": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/locationCluster/2021.3.0/LocationClusterLocationDetails-to-LocationClusterMembers.dwl"
+                }
+            },
+            "csv": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/locationCluster/2021.3.0/LocationClusterLocationDetails-to-LocationClusterMembers-CSV.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/locationCluster/2021.3.0/LocationClusterLocationDetails-to-LocationClusterMembers-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/locationCluster/2021.3.0/LocationClusterLocationDetails-to-LocationClusterMembers-historical-CSV.dwl"
+                }
+            }
+        }
+    },
+    "Competitors": {
+        "daily": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/competitor/2021.3.0/competitor-to-competitors.dwl"
+                }
+            },
+            "csv": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/competitor/2021.3.0/competitor-to-competitors-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/competitor/2021.3.0/competitor-to-competitors.dwl"
+                }
+            },
+            "csv": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/competitor/2021.3.0/competitor-to-competitors-csv.dwl"
+                }
+            }
+        }
+    },
+    "CompetitorMatchings": {
+        "daily": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/competitor/2021.3.0/competitor-to-competitorMatchings.dwl"
+                }
+            },
+            "csv": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/competitor/2021.3.0/competitor-to-competitorMatchings-csv.dwl"
+                }
+            }
+        },
+        "historical": {
+            "json": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/competitor/2021.3.0/competitor-to-competitorMatchings-historical.dwl"
+                }
+            },
+            "csv": {
+                "2021.3.0": {
+                    "addOrChangeByRefresh": "dataweave/bydm_dwl/competitor/2021.3.0/competitor-to-competitorMatchings-csv-historical.dwl"
+                }
+            }
+        }
+    }
+}

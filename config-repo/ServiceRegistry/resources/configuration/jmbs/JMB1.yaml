@@ -1,0 +1,15 @@
+!jmb-configuration-v1
+
+name: JMB1
+outboundEndpoints:
+- name: LPA
+  flow:
+    name: jmsOutboundFlow
+    parameters:
+    - name: "queue"
+      value: "LPA_INBOUND_QUEUE"
+
+outboundMappings:
+  - receiver: 'LP.GLOBAL'
+    request: '*:*:*'
+    outboundEndpoint: 'LPA'
