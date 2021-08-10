@@ -1,0 +1,4 @@
+2021-07-07 10:16:17 INFO-C:\clone_develop\validationService\validationService_v0.1\validationScriptForLPA\../schemaToValidate/workflowconfig_schema.json
+2021-07-07 10:35:35 INFO-C:\clone_develop\validationService\validationService_v0.1\validationScriptForLPA\../schemaToValidate/workflowconfig_schema.json
+2021-07-07 11:02:55 INFO-C:\clone_develop\validationService\validationService_v0.1\validationScriptForLPA\../schemaToValidate/workflowconfig_schema.json
+2021-07-07 11:03:02 INFO-C:\clone_develop\validationService\validationService_v0.1\validationScriptForLPA\../schemaToValidate/workflowconfig_schema.json
