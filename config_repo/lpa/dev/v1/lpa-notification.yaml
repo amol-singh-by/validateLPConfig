@@ -1,8 +1,0 @@
-# config-repo/lpa/lpa-notification.yaml
-
-connectNotification:
-  #This flag determines that Notitifcation will be sent to customer. 
-  #For Error Acks this flag will send the notification by default
-  notifyToCustomer: "true"
-  notifySuccessAckAsWell: "true"
-  #Queue name can be configured in lpa-jms.yaml
