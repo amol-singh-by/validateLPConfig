@@ -13,9 +13,9 @@ logging.basicConfig(filename="./logs/log.txt",
                     datefmt='%Y-%m-%d %H:%M:%S',
                     level=logging.DEBUG)
 
-SERVICE_DEF_PATH = os.path.join(os.path.dirname(__file__), '.\config_repo\lpa\dev\v1\resources\config\LPA-2021.1.0.yaml')
-WORKFLOW_CFG_PATH = os.path.join(os.path.dirname(__file__), '.\config_repo\lpa\dev\v1\resources\config\workflowConfig.json')
-TRANSFORM_CFG_PATH = os.path.join(os.path.dirname(__file__), '.\config_repo\lpa\dev\v1\resources\config\transformConfig.json')
+SERVICE_DEF_PATH = os.path.join(os.path.dirname(__file__), '../config_repo/lpa/dev/v1/resources/config/LPA-2021.1.0.yaml')
+WORKFLOW_CFG_PATH = os.path.join(os.path.dirname(__file__), '../config_repo/lpa/dev/v1/resources/config/workflowConfig.json')
+TRANSFORM_CFG_PATH = os.path.join(os.path.dirname(__file__), '../config_repo/lpa/dev/v1/resources/config/transformConfig.json')
 
 # SERVICE_DEF_PATH = r"C:\clone_develop\lde-8342\lde\src\main\resources\config-repo\ServiceRegistry\resources\configuration" \
 #                    r"\service-definitions\LPA-2021.1.0.yaml "
